@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--Donell Fakude -->
+<!--PersonalWebsite-->
+<!--File name: index.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donell Fakude | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+</head>
+
+<body class=" font-sans">
+    <!-- Navigation -->
+	<header class=" top-0 z-50" >
+    <nav class=" bg-white-800 shadow-sm sticky ">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" onclick="loadPage('home')" class="text-xl font-bold text-white-900 flex items-center">
+                        <i class="fas fa-code mr-2 text-white-500"></i> Donell Fakude
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" onclick="loadPage('home')" class="nav-link text-white-900 hover:text-blue-500 px-3 py-2 text-sm font-medium active-nav">Home</a>
+                    <a href="portfolio.html" onclick="loadPage('portfolio')" class="nav-link text-white-900 hover:text-blue-500 px-3 py-2 text-sm font-medium">Portfolio</a>
+                    <a href="contact.html" onclick="loadPage('contact')" class="nav-link text-white-900 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" onclick="loadPage('home')" class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Home</a>
+                <a href="portfolio.html" onclick="loadPage('portfolio')" class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Portfolio</a>
+                <a href="contact.html" onclick="loadPage('contact')" class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+	</header>
+	<!--Video Background -->
+	<video autoplay muted loop id="bg-video">
+		<source src="videos/whitevideo.mp4" type="video/mp4">
+	</video>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Hero Section -->
+    <section class="hero-gradient rounded-xl text-white p-8 md:p-12 mb-12">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4"><span  class="gradient-text">Donell Fakude </span></h1> 
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Hello World</h2>
+          <p class="text-lg mb-8 opacity-90">Computer Science Student | IT & Business Management Major | Driven by Work Ethic, Optimism, and Leadership | Building a Future of Excellence in Technology and Business</p>
+          <div class="flex space-x-4">
+            <a href="portfolio.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">View My Work</a>
+            <a href="contact.html" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition duration-300">Contact Me</a>
+          </div>
+        </div>        
+      </div>
+    </section>
+	
+	 <section class="mb-12">
+            <h1 class="text-4xl font-bold mb-8 text-gray-800">About Me</h1>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <img src="images/donellimage.jpg" alt="Donell Fakude" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">Who I Am</h2>
+                    <p class="text-gray-700 mb-6">I'm a passionate full-stack developer with ambition to building web applications and softwares. My journey in tech started when I fixed and built my first desktop at a young age , I then discovered that there more to learn and I've been hooked ever since.</p>
+
+                    <p class="text-gray-700 mb-6">I aim specialize Software engineering ,Networks, Full-stack and Backend Developing thus creating responsive, user-friendly applications with clean, efficient code. My approach combines technical expertise with an eye for Business industry , ensuring that the products I build are both functional and business functional.</p>
+					
+					<p class="text-gray-700 mb-6">The science and commercial sectors often overlap.I provide best of both worlds and I aim to penetrate the public and private sectors.</p>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">My Philosophy</h3>
+                        <p class="text-gray-700 mb-4">I believe that great software should:</p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Solve real problems for real people</li>
+                            <li>Be accessible to everyone</li>
+                            <li>Perform exceptionally well</li>
+                            <li>Be maintainable and scalable</li>
+                            <li>Bring joy to its users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+	<section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 border-b pb-2">My Journey</h2>
+            <div class="relative">
+                <div class="border-l-2 border-blue-500 pl-8 space-y-12">
+                    <div class="relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 bg-blue-500 rounded-full"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">BSC in Computer Science majoring in Information Technology and Business Management</h3>
+                            <p class="text-gray-600 mb-2">2021 - Present</p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 bg-blue-500 rounded-full"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Hoerskool Akasia</h3>
+                            <p class="text-gray-600 mb-2">2015 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+	<section class="mb-12">
+      <h1 class="text-4xl font-bold mb-8 text-gray-800">Skills & Expertise</h1>
+      <p class="text-gray-700 mb-8 max-w-3xl">
+        Over the course of my studies , I've developed a diverse skill set that allows me to tackle projects from concept to completion. Here's an overview of my technical capabilities.
+      </p>
+	  <div class="mb-12">
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">HTML/CSS</span>
+                                <span class="text-gray-600">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">JavaScript</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">C#</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">SQL</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-12">
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Visual Basic for Applications(VBA)</span>
+                                <span class="text-gray-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-green-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Python</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-green-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Computer Hardware</span>
+                                <span class="text-gray-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-green-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Java</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-bar bg-green-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">Digital Management</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-purple-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">Communication</span>
+                                    <span class="text-gray-600">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-purple-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">PostgreSQL</span>
+                                    <span class="text-gray-600">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-purple-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">Team Work</span>
+                                    <span class="text-gray-600">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-yellow-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">Training Management</span>
+                                    <span class="text-gray-600">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-yellow-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-medium">General Management</span>
+                                    <span class="text-gray-600">70%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="skill-bar bg-yellow-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+	
+    <!-- Featured Projects -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-white-900 border-b pb-2">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Ronell's Interiors Built</h3>
+            <p class="text-gray-600 mb-4">A Dynamic website I have been working on which highlights my Twin sister's work and world on an interior designer</p>
+            <a href="#" class="text-blue-500 font-medium hover:text-blue-700">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Cloud Storage Interface</h3>
+            <p class="text-gray-600 mb-4">Under construction</p>
+            <a href="#" class="text-blue-500 font-medium hover:text-blue-700">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">School Web Portal</h3>
+            <p class="text-gray-600 mb-4">Under construction</p>
+            <a href="#" class="text-blue-500 font-medium hover:text-blue-700">View Project →</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="portfolio.html" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300">View All Projects</a>
+      </div>
+    </section>
+
+    <!-- Extra activities -->
+    <section>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 border-b pb-2">When I'm Not Coding</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Gaming</h3>
+                    <p class="text-gray-700">I play gaming </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Soccer</h3>
+                    <p class="text-gray-700">I am a huge football lover</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Athletics</h3>
+                    <p class="text-gray-700">I follow athletics </p>
+                </div>
+            </div>
+        </section>
+
+  </main>
+
+    <!-- Footer -->
+	 <footer class="relative bg-white-800 shadow-lg-top text-gray pt-20 pb-10">
+        
+		<!-- Main footer content -->
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <!-- About section -->
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-laptop-code mr-2"></i> CS Portfolio
+                    </h3>
+                    <p class="text-gray mb-4">
+                        A passionate computer scientist dedicated to solving complex problems with elegant code & innovative solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/DEVDonell" class="social-icon text-white hover:text-blue-300 text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/donell-fakude" class="social-icon text-white hover:text-blue-300 text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lightning_pace" class="social-icon text-white hover:text-blue-300 text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:fakudedonell4@gmail.com" class="social-icon text-white hover:text-blue-300 text-xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+						<a href="https://discord.com/users/donellfakudepace" class="social-icon text-white hover:text-blue-300 text-xl">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link text-gray hover:text-gray">Home</a></li>
+                        <li><a href="portfolio.html" class="footer-link text-gray hover:text-gray">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link text-gray hover:text-gray">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Tech stack -->
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">SQL</span>
+                        <span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">HTML</span>
+						<span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">C#</span>
+						<span class="bg-blue-800 text-blue-100 px-3 py-1 rounded-full text-sm">VisualStudio</span>
+                    </div>
+                </div>
+            </div>
+            
+    <p>&copy; 2025 Donell Fakude. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
